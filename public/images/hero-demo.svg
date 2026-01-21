@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect fill="#f3f4f6" width="1200" height="675"/>
+  <rect fill="#e5e7eb" x="40" y="40" width="1120" height="595" rx="12"/>
+  <text x="600" y="300" text-anchor="middle" fill="#6b7280" font-family="system-ui" font-size="32">Hero Demo Image</text>
+  <text x="600" y="350" text-anchor="middle" fill="#9ca3af" font-family="system-ui" font-size="20">Vouch Extension Screenshot</text>
+  <rect fill="#3b82f6" x="450" y="400" width="300" height="50" rx="8"/>
+  <text x="600" y="432" text-anchor="middle" fill="white" font-family="system-ui" font-size="18">1200 × 675</text>
+</svg>

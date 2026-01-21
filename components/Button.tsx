@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
 
 type ButtonProps = {
   children: React.ReactNode
@@ -27,7 +28,7 @@ export function Button({
     lg: 'px-8 py-4 text-lg',
   }
 
-  const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`
+  const classes = cn(base, variants[variant], sizes[size], className)
 
   const isExternal = href.startsWith('http')
 

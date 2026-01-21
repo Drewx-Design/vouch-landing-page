@@ -40,6 +40,11 @@
   --shadow-focus: 0 0 0 3px var(--color-plum-100);
 }
 
+/* Typography: 17px base for optimal readability (Erik Kennedy methodology) */
+html {
+  font-size: 106.25%; /* 17/16 = 1.0625 → text-base becomes 17px */
+}
+
 body {
   background: var(--color-background);
   color: var(--color-foreground);

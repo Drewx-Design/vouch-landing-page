@@ -5,7 +5,7 @@ export const faqItems = [
   },
   {
     question: 'What design rules does Vouch check?',
-    answer: 'Vouch checks 50+ rules across spacing, typography, color, shadows, and alignment. Rules are based on proven design principles. Tailwind preset included; custom design tokens supported.',
+    answer: '73 rules across 8 categories: spacing, typography, color, shadows, alignment, accessibility, touch targets, and components. Most are deterministic checks — "is this divisible by 8?" or "is contrast above 4.5:1?" Tailwind preset included; custom design tokens supported.',
   },
   {
     question: 'Does Vouch work with my framework?',
@@ -64,11 +64,14 @@ export const howItWorksSteps = [
 ] as const
 
 export const ruleCategories = [
-  { category: 'Spacing', examples: 'Magic numbers, inconsistent margins, broken scales' },
-  { category: 'Typography', examples: 'Wrong sizes, bad line heights, hierarchy violations' },
-  { category: 'Color', examples: 'Rogue hex codes, contrast failures, palette drift' },
-  { category: 'Shadows', examples: 'Light-from-below, inconsistent blur, wrong colors' },
-  { category: 'Alignment', examples: 'Near-misses, uneven gutters, visual imbalance' },
+  { category: 'Spacing', rules: 7, catches: 'Off-grid values, inconsistent margins, inner > outer padding' },
+  { category: 'Typography', rules: 12, catches: 'Wrong sizes, poor line heights, too many fonts' },
+  { category: 'Color', rules: 11, catches: 'Rogue hex codes, contrast failures, muddy variations' },
+  { category: 'Shadows', rules: 5, catches: 'Light-from-below, pure black shadows, wrong opacity' },
+  { category: 'Alignment', rules: 21, catches: 'Near-misses, uneven gutters, visual imbalance' },
+  { category: 'Accessibility', rules: 3, catches: 'Missing focus indicators, removed outlines, color-only states' },
+  { category: 'Touch Targets', rules: 6, catches: 'Undersized buttons, cramped tap spacing' },
+  { category: 'Components', rules: 8, catches: 'Button height variance, inconsistent inputs, missing hovers' },
 ] as const
 
 export const features = [

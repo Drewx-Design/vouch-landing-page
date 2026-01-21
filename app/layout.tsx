@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
     title: 'Vouch - Design Linter for Chrome',
-    description: 'Catch design inconsistencies automatically. 50+ rules. AI-friendly output.',
+    description: 'Catch design inconsistencies automatically. 73 rules. AI-friendly output.',
     images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'Vouch - Design Linter' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Vouch - Design Linter for Chrome',
-    description: 'Catch design inconsistencies automatically. 50+ rules. AI-friendly output.',
+    description: 'Catch design inconsistencies automatically. 73 rules. AI-friendly output.',
     images: ['/og-image.svg'],
   },
   alternates: {

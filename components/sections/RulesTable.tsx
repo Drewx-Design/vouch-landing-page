@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { ruleCategories } from '@/lib/content'
 
 export function RulesTable() {
@@ -63,12 +62,6 @@ export function RulesTable() {
           />
         </div>
 
-        {/* Link to full rules */}
-        <p className="mt-8 text-center">
-          <Link href="/rules" className="text-brand hover:text-brand-hover font-medium">
-            See all 73 rules →
-          </Link>
-        </p>
       </div>
     </section>
   )

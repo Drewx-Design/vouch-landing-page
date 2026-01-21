@@ -19,6 +19,7 @@
   --color-foreground: var(--color-neutral-800);
   --color-brand: var(--color-plum-500);
   --color-brand-hover: var(--color-plum-600);
+  --color-brand-active: var(--color-plum-700);
   --color-brand-light: var(--color-plum-100);
 
   /* Typography */

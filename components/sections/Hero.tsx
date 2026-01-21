@@ -8,7 +8,7 @@ export function Hero() {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-            Your AI can't see this. <span className="text-blue-600">Vouch can.</span>
+            Your AI can't see this. <span className="text-brand">Vouch can.</span>
           </h1>
           <p className="text-xl text-gray-600">
             47 errors found on this page. Copy → Paste to Claude → Fixed in 5 minutes.

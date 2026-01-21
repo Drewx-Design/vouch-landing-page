@@ -36,6 +36,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: Drewx-Design/Prompt_Theory
+          token: ${{ secrets.DESIGN_LINTER_TOKEN }}
           path: design-linter
 
       - name: Setup Node.js

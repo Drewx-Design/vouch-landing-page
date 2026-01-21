@@ -9,10 +9,10 @@ export function WhoItsFor() {
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {personas.map((persona) => (
-            <div key={persona.title} className="text-center p-8 rounded-xl border border-gray-200">
+            <div key={persona.title} className="text-center p-8 rounded-xl border border-neutral-200">
               <span className="text-4xl mb-4 block" aria-hidden="true">{persona.icon}</span>
               <h3 className="text-xl font-semibold mb-2">{persona.title}</h3>
-              <p className="text-gray-600">{persona.description}</p>
+              <p className="text-neutral-600">{persona.description}</p>
             </div>
           ))}
         </div>

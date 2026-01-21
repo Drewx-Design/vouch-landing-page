@@ -3,7 +3,7 @@ import { howItWorksSteps } from '@/lib/content'
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" aria-labelledby="how-heading" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="how-it-works" aria-labelledby="how-heading" className="py-24 px-4 sm:px-6 lg:px-8 bg-neutral-50">
       <div className="max-w-7xl mx-auto">
         <h2 id="how-heading" className="text-3xl sm:text-4xl font-bold text-center mb-16">
           Run. Copy. Ship.
@@ -18,7 +18,7 @@ export function HowItWorks() {
                   </span>
                   <h3 className="text-2xl font-semibold">{step.title}</h3>
                 </div>
-                <p className="text-lg text-gray-600">{step.description}</p>
+                <p className="text-lg text-neutral-600">{step.description}</p>
               </div>
               <div className={index % 2 === 1 ? 'md:order-1' : ''}>
                 <Image

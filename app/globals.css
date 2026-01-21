@@ -1,23 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --brand: #774085;
-  --brand-hover: #60336B;
-  --brand-light: #8E4C9E;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-brand: var(--brand);
-  --color-brand-hover: var(--brand-hover);
-  --color-brand-light: var(--brand-light);
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+  /* Brand (Wax Seal Plum) - Kennedy HSB rules applied */
+  --color-plum-100: #E8D6EB;  /* focus rings, light backgrounds (B↑92%, S↓12%, H→292°) */
+  --color-plum-500: #632D6B;  /* primary CTA - BASE */
+  --color-plum-600: #512359;  /* hover (B↓35%, S↑65%, H→286°) */
+  --color-plum-700: #401A47;  /* active/pressed (B↓28%, S↑72%, H→283°) */
+
+  /* Neutrals (plum-tinted H:289°, S:4-5%) */
+  --color-neutral-50:  #FAF9FA;  /* page background */
+  --color-neutral-200: #DCD8DD;  /* borders, dividers */
+  --color-neutral-400: #8B858D;  /* secondary text, icons */
+  --color-neutral-600: #524D54;  /* primary text */
+  --color-neutral-800: #2A262B;  /* headlines */
+
+  /* Semantic aliases for Tailwind */
+  --color-background: var(--color-neutral-50);
+  --color-foreground: var(--color-neutral-800);
+  --color-brand: var(--color-plum-500);
+  --color-brand-hover: var(--color-plum-600);
+  --color-brand-light: var(--color-plum-100);
+
+  /* Typography */
+  --font-sans: var(--font-ibm-plex), ui-sans-serif, system-ui, sans-serif;
+
+  /* Shadows (two-layer, plum-tinted from plum-700) */
+  --shadow-sm:
+    0 1px 2px rgba(64, 26, 71, 0.06),
+    0 1px 3px rgba(64, 26, 71, 0.04);
+  --shadow-md:
+    0 2px 4px rgba(64, 26, 71, 0.06),
+    0 4px 8px rgba(64, 26, 71, 0.04);
+  --shadow-lg:
+    0 4px 8px rgba(64, 26, 71, 0.08),
+    0 8px 16px rgba(64, 26, 71, 0.04);
+
+  /* Focus ring */
+  --shadow-focus: 0 0 0 3px var(--color-plum-100);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-background);
+  color: var(--color-foreground);
 }

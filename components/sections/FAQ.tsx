@@ -11,16 +11,16 @@ export function FAQ() {
           {faqItems.map((item, index) => (
             <details
               key={item.question}
-              className="border border-gray-200 rounded-lg group"
+              className="border border-neutral-200 rounded-lg group"
               open={index === 0}
             >
               <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-semibold text-lg">
                 {item.question}
-                <span className="ml-4 flex-shrink-0 text-gray-500 group-open:rotate-180 transition-transform">
+                <span className="ml-4 flex-shrink-0 text-neutral-400 group-open:rotate-180 transition-transform">
                   ▼
                 </span>
               </summary>
-              <div className="px-6 pb-6 text-gray-600">
+              <div className="px-6 pb-6 text-neutral-600">
                 <p>{item.answer}</p>
               </div>
             </details>

@@ -10,7 +10,7 @@ export function Hero() {
           <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
             Your AI can't see this. <span className="text-brand">Vouch can.</span>
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-neutral-600">
             47 errors found on this page. Copy → Paste to Claude → Fixed in 5 minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -18,7 +18,7 @@ export function Hero() {
               Install Free for Chrome
             </Button>
           </div>
-          <p className="text-sm text-gray-500">No account required. Works immediately.</p>
+          <p className="text-sm text-neutral-400">No account required. Works immediately.</p>
         </div>
         <div>
           <Image

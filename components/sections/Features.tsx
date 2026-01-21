@@ -11,11 +11,11 @@ export function Features() {
           {features.map((feature) => (
             <div key={feature.title} className="text-center">
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-neutral-600">{feature.description}</p>
             </div>
           ))}
         </div>
-        <p className="text-center text-sm text-gray-500 italic">
+        <p className="text-center text-sm text-neutral-400 italic">
           MCP integration and CI/CD output (SARIF) available for power users.
         </p>
       </div>
